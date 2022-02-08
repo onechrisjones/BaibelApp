@@ -3,7 +3,11 @@ const fs = require('fs');
 
 const tree = dirTree('./static');
 
-const parseNumber = text => text.name.split(' ')[2].replace('.mp3', '');
+const parseNumber = text => {
+const parse = text.name.split(' ');
+const value = parse[2] || parse[1] || parse[0];
+return value.replace('.mp3', '');
+};
 
 const formatChildren = items => {
   return items.sort((a, b) => {
