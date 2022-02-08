@@ -18,23 +18,23 @@ react-native run-android
 
 1. Create a `static` directory in the root of the project.
 
-2. Make sure there is an empty directory called 'raw' at `android/app/src/main/res`
+2. Make sure there is an empty directory called `raw` at `android/app/src/main/res`
 
-3. Copy your listen and read files into the 'static' directory made in step 1. (The structure should look like the following)
+3. Copy your listen and read files into the `static` directory made in **Step 1**. (The structure should resemble below)
 
 <img src="./img/dir.png" width="200" alt="Dir">
 
 3. At the root of the project, run the compilation script. `node generate-app-data.js`.  
-If you have issues running, our node version is `12.15.0`... A newer version *might* break things. This script will move the stuff from the 'static' directory, and put things into the proper directories and formats to be consumed by the app.
+*If you have issues running, our node version is `12.15.0`... A newer version *might* break things. `node generate-app-data.js` moves the stuff from the 'static' directory, and puts things into the proper directories used by the app.**
 
-4. Check the 'raw' directory you made in step 2... it should have media files in it now.
+4. Check the `raw` directory you made in **Step 2**... it should have media files in it now.
 
-5. Now, time to build an APK or run the app for development.
+5. Now, time to *build an APK** or *run the app for development* in something like Android Studio.
 
-## To Generate an APK
+### To Build an APK
 
-1. Ensure you have latest version of android studio installed.
+1. Make sure you have (latest version?) Android Studio installed.
 2. Navigate into the `android` folder.
-3. Run `./gradlew assembleRelease`. The APK will exist in the following folder.
+3. Run `./gradlew assembleRelease`. The APK will be generated, and placed in the following folder:
 
 <img src="./img/apk.png" width="200" alt="APK">
