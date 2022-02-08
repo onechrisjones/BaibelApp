@@ -1,19 +1,8 @@
-<p align="center">
-  <a href="https://github.com/actovos-consulting-group/baibel"><img src="./img/repo-logo.png" width="200" alt="Logo"></a>
-</p>
-
-<p align="center">
-   Bible Translation App
-</p>
-
-<p align="center">
-  <a href="#badge"><img src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg" alt="styled with prettier"></a>
-  <a href="#badge"><img src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg" alt="Conventional Commits"></a>
-</p>
-
 ## Overview
 
-Baibel is an app that provides biblical translations to remote users where there may be no wifi or internet service. The app functions completely offline and uses no external API or http requests. All the data is bundled statically with the app which includes markdown for the biblical books and .mp3 audio files. Currently this app is only been tested and optimized for Android.
+Baibel provides Bible Translations and Media to remote users where there may be no wifi or internet service. The app functions completely offline and uses no external API or http requests. 
+
+All the data is bundled statically with the app -- .mp3 audio files, and html for reading. Currently this app has only been tested and optimized for Android.
 
 ## Setup
 
@@ -29,13 +18,18 @@ react-native run-android
 
 1. Create a `static` directory in the root of the project.
 
-2. Copy your listen and read files into the directory. (The structure should look like the following)
+2. Make sure there is an empty directory called 'raw' at `android/app/src/main/res`
+
+3. Copy your listen and read files into the 'static' directory made in step 1. (The structure should look like the following)
 
 <img src="./img/dir.png" width="200" alt="Dir">
 
-3. Run the compilation script. `node generate-app-data.js`. If you have issues running ensure your node version is `12.15.0`. This will compile your assets into the proper directories and formats to be consumed by the app.
+3. At the root of the project, run the compilation script. `node generate-app-data.js`.  
+If you have issues running, our node version is `12.15.0`... A newer version *might* break things. This script will move the stuff from the 'static' directory, and put things into the proper directories and formats to be consumed by the app.
 
-4. Next either run the app for development or generate an apk file.
+4. Check the 'raw' directory you made in step 2... it should have media files in it now.
+
+5. Now, time to build an APK or run the app for development.
 
 ## To Generate an APK
 
