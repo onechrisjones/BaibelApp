@@ -25,7 +25,7 @@ react-native run-android
 <img src="./img/dir.png" width="200" alt="Dir">
 
 3. At the root of the project, run the compilation script. `node generate-app-data.js`.  
-*If you have issues running, our node version is `12.15.0`... A newer version *might* break things. `node generate-app-data.js` moves the stuff from the 'static' directory, and puts things into the proper directories used by the app.**
+*If you have issues running, our node version is `12.15.0`... A different version might be breaking things. `node generate-app-data.js` moves the stuff from the 'static' directory, and puts things into the proper directories used by the app.*
 
 4. Check the `raw` directory you made in **Step 2**... it should have media files in it now.
 
@@ -35,6 +35,10 @@ react-native run-android
 
 1. Make sure you have (latest version?) Android Studio installed.
 2. Navigate into the `android` folder.
-3. Run `./gradlew assembleRelease`. The APK will be generated, and placed in the following folder:
+3. Run `./gradlew assembleRelease`  
+	- *If you are having `Gradle property is invalid (Java home supplied is invalid)` or similar problems, you'll have to delete the appropriate (last) line in the `android/gradle.properties` file, and update it with the correct address.*
+	- *You'll also need to make sure that `android/local.properties` is correctly configured*
+
+When finished, the APK will be generated, and placed in the following folder:
 
 <img src="./img/apk.png" width="200" alt="APK">
