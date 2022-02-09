@@ -27,7 +27,7 @@ const BibleBookChapters = ({ navigation }) => {
 
     const processBooks = books
       .map(book => {
-        const chapterNumber = parseInt(book.name.replace('.md', ''));
+        const chapterNumber = parseInt(book.name.replace('.html', ''));
         return {
           ...book,
           value: book.name,

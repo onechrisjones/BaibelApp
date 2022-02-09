@@ -7,7 +7,7 @@ const HTMLView = ({ children }) => {
     <HTML
       baseFontStyle={{
         color: 'white',
-        fontSize: 24,
+        fontSize: 16,
         fontFamily: 'CircularStd-Black',
       }}
       tagsStyles={{

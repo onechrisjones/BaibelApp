@@ -25,7 +25,6 @@ const ReadChapters = ({ navigation }) => {
   const contents = navigation.getParam('chapters');
   const firstChapter = navigation.getParam('chapterNumber');
   const [active, setActive] = React.useState(firstChapter);
-
   const pages = React.useMemo(() => {
     const obj = {};
     contents.forEach(content => {

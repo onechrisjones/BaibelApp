@@ -14,7 +14,6 @@ const Chapter = ({ navigation }) => {
   const chapterLabel = navigation.getParam('chapterLabel');
   const bibleName = navigation.getParam('bibleName');
   const contents = navigation.getParam('contents');
-
   return (
     <ItemContainer>
       <ScreenTitle title={`${bibleName} - ${chapterLabel}`} />
