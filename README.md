@@ -1,16 +1,3 @@
-<p align="center">
-  <a href="https://github.com/actovos-consulting-group/baibel"><img src="./img/repo-logo.png" width="200" alt="Logo"></a>
-</p>
-
-<p align="center">
-   Bible Translation App
-</p>
-
-<p align="center">
-  <a href="#badge"><img src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg" alt="styled with prettier"></a>
-  <a href="#badge"><img src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg" alt="Conventional Commits"></a>
-</p>
-
 ## Overview
 
 Baibel provides Bible Translations and Media to remote users where there may be no wifi or internet service. The app functions completely offline and uses no external API or http requests. 
